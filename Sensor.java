@@ -68,7 +68,7 @@ public class Sensor{
         }
         for(int j=1; j<sensorTemperatura.length; j++){
             for(int h=0; h<sensorTemperatura.length-j; h++){
-                if(sensorTemperatura[h].getValor()>sensorTemperatura[h+1].getValor()){//(s1>s2){
+                if(sensorTemperatura[h].getValor()>sensorTemperatura[h+1].getValor()){
                     Sensor temp= sensorTemperatura[h+1];
                     sensorTemperatura[h+1]= sensorTemperatura[h];
                     sensorTemperatura[h]= temp;
