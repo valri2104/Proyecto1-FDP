@@ -56,13 +56,9 @@ public class Sensor{
                 j++;
             }
         }
-        
         for(int k=1; k<sensorTemperatura.length; k++){
             for(int h=0; h<sensorTemperatura.length-k; h++){
-                System.out.println(sensorTemperatura[h].getValor());
-                System.out.println(sensorTemperatura[h+1].getValor());
-                if(sensorTemperatura[h].getValor()>sensorTemperatura[h+1].getValor()){//(s1>s2){
-                    System.out.println("ordenando el arreglo"+h);
+                if(sensorTemperatura[h].getValor()>sensorTemperatura[h+1].getValor()){
                     Sensor temp= sensorTemperatura[h+1];
                     sensorTemperatura[h+1]= sensorTemperatura[h];
                     sensorTemperatura[h]= temp;
